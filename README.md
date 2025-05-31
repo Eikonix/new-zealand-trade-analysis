@@ -73,8 +73,7 @@ To visualize these yearly figures, I created a grouped bar chart using Plotly.
 
 Below is the chart showing the yearly trade summary:
 
-*(Placeholder for your graph image: You will insert your graph image here using Markdown like this: `![Yearly Trade Summary Chart](path/to/your/yearly_trade_summary_chart.png)`)*
-*You should take a screenshot of your Plotly graph, save it as an image (e.g., `yearly_trade_summary.png`), upload it to your GitHub repository (e.g., in the main folder or an `images` subfolder), and then update the path above.*
+![Yearly Trade Summary Chart](yearly_trade_summary.png)
 
 **Key Observations from the Chart:**
 *   **Exports:** Export values remained relatively similar across the three years (2022-2024).
@@ -83,4 +82,4 @@ Below is the chart showing the yearly trade summary:
     *   New Zealand experienced a trade deficit (imports were higher than exports) in all three years (2022, 2023, and 2024).
     *   However, the trade deficit appeared to be improving (getting smaller) over time, likely due to the decrease in import values.
 
-The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({your_kaggle_notebook_link_here}). *(Remember to replace `{your_kaggle_notebook_link_here}` with your actual link)*
+The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link_here}). 
