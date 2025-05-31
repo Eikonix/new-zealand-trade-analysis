@@ -83,3 +83,19 @@ Below is the chart showing the yearly trade summary:
     *   However, the trade deficit appeared to be improving (getting smaller) over time, likely due to the decrease in import values.
 
 The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link_here}). 
+
+### Step 3: Analysis of Top Trading Partner Countries (2022-2024 Aggregate)
+
+To understand New Zealand's key trading relationships, I identified the top trading partner countries based on the total value of trade over the entire 2022-2024 period.
+
+#### 3.1 Identifying Top Countries
+*   **Top Import Countries:** I grouped the `df_imports_all` data by 'Country' and summed the 'Imports ($NZD cif)' for all three years. Then, I sorted these totals in descending order to find the top 10 countries from which New Zealand imported the most.
+*   **Top Export Countries:** I followed the same process for the `df_exports_all` data, grouping by 'Country' and summing the 'Total Exports ($NZD fob)' to identify the top 10 export destination countries.
+
+#### 3.2 Visualization and Insights
+I created side-by-side horizontal bar charts using Matplotlib and Seaborn to display the top 10 import countries and top 10 export countries. Horizontal bar charts were chosen as they make it easy to read country names and compare the values.
+
+
+
+
+
