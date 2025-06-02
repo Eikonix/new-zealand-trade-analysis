@@ -82,7 +82,7 @@ Below is the chart showing the yearly trade summary:
     *   New Zealand experienced a trade deficit (imports were higher than exports) in all three years (2022, 2023, and 2024).
     *   However, the trade deficit appeared to be improving (getting smaller) over time, likely due to the decrease in import values.
 
-The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link_here}). 
+The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link}). 
 
 ### Step 3: Analysis of Top Trading Partner Countries (2022-2024 Aggregate)
 
@@ -95,7 +95,42 @@ To understand New Zealand's key trading relationships, I identified the top trad
 #### 3.2 Visualization and Insights
 I created side-by-side horizontal bar charts using Matplotlib and Seaborn to display the top 10 import countries and top 10 export countries. Horizontal bar charts were chosen as they make it easy to read country names and compare the values.
 
+![Top Trading Partners Chart](top_trading_partners_chart.png)
 
+**Key Observations from the Top Trading Partners Chart:**
+*   **Dominant Partner - China:** China was consistently the number one trading partner for New Zealand for both imports and exports over the 2022-2024 period. Notably, the trade value with China was approximately twice that of the second-ranked partner, Australia, indicating a significant reliance on China for New Zealand's trade.
+*   **Key Regional Partners:** Australia was the second-largest trading partner, followed by the USA as the third, for both imports and exports.
+*   **Other Significant Asian Partners:** Japan and South Korea also featured prominently in the top 5 for both import sources and export destinations, with their exact rankings slightly varying between imports and exports (Japan was 4th for imports and 5th for exports; South Korea was 5th for imports and 4th for exports).
 
+The code for this country-level aggregation and visualization can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
 
+### Step 4: Trade Balance with Key Countries (2022-2024 Aggregate)
 
+This step aimed to identify countries with which New Zealand has significant trade surpluses (exporting more than importing) and significant trade deficits (importing more than exporting) over the total 2022-2024 period.
+
+#### 4.1 Calculating Country-Specific Trade Balances
+To achieve this:
+1.  I first calculated the total value of all exports to each country over the three years (2022-2024) by grouping the `df_exports_all` data by 'Country' and summing the 'Total Exports ($NZD fob)'.
+2.  Similarly, I calculated the total value of all imports from each country over the three years from the `df_imports_all` data.
+3.  Then, for each country, I subtracted its total import value from its total export value to determine the trade balance.
+
+#### 4.2 Identifying Top Surplus and Deficit Countries
+*   **Top Surplus Countries:** I sorted the countries by their trade balance in descending order (largest positive balance first) to find the top 10 countries with which New Zealand had the largest trade surplus.
+*   **Top Deficit Countries:** I sorted the countries by their trade balance in ascending order (largest negative balance first, or smallest positive) to find the top 10 countries with which New Zealand had the largest trade deficit.
+
+#### 4.3 Visualization and Insights
+
+![Top Surplus / Defect Countries Chart](surplus_deficit_countries_chart.png)
+
+**Key Observations from Trade Balances with Specific Countries:**
+*   **Top Surplus Generating Countries:**
+    *   The largest trade surplus for New Zealand was with **Hong Kong**.
+    *   The second largest surplus was with **Algeria**, which was an interesting finding.
+    *   **China**, despite being the overall top trading partner, ranked third in terms of generating a trade surplus for New Zealand.
+*   **Top Deficit Incurring Countries:**
+    *   New Zealand had its largest trade deficit with **South Korea**.
+    *   The second largest deficit was with **Germany**.
+    *   The third largest deficit was with **Sigapore**. *(Please fill this in based on your data)*
+*   **Notable Absences:** It was interesting to note that Australia and the USA, New Zealand's second and third largest overall trading partners respectively, did not appear among the top countries for either the largest surpluses or largest deficits. This suggests a more balanced trade relationship with them in terms of direct export-import values, or that their large total trade volume is composed of many offsetting transactions.
+
+The code for these calculations can be found in the [Kaggle Notebook]({kaggle_notebook_link}). 
