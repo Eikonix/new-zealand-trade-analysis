@@ -149,4 +149,27 @@ I created a line chart using Matplotlib to plot these monthly export and import 
 *   The **x-axis** represented the 'Period' (Month-Year).
 *   The **y-axis** represented the monetary values in NZD.
 *   Two lines were plotted: one for total monthly exports (in green) and one for total monthly imports (in blue).
-*   
+
+   ![Monthly Trends Chart](monthly_trends_chart.png)
+
+**Key Observations from the Monthly Trends Chart:**
+*   **Opposite Seasonal Peaks:** An interesting pattern emerged where peak import months often coincided with lower export months, and vice-versa.
+    *   For example, August, September, and October appeared to be high seasons for imports, while exports were relatively lower during these months.
+    *   Conversely, May showed a peak for exports but appeared to be a lower period for imports.
+*   **General Trend Confirmation:** The line chart generally showed that monthly import values (the blue line) were often higher than monthly export values (the green line). This aligns with the overall trade deficit observed in the yearly summary.
+
+### Step 6: Analysis of Top Traded Commodities (2022-2024 Aggregate)
+
+This step focused on identifying the specific commodity categories that accounted for the highest trade values for both imports and exports over the 2022-2024 period.
+
+#### 6.1 Identifying Top Commodities
+*   I used the 'Harmonised System Description' column to identify the different commodities.
+*   **Top Import Commodities:** For imports, I grouped the `df_imports_all` data by 'Harmonised System Description' and summed the 'Imports ($NZD cif)' for all three years. The results were then sorted in descending order to get the top 10 most valuable import commodities.
+*   **Top Export Commodities:** The same process was applied to the `df_exports_all` data, summing 'Total Exports ($NZD fob)' for each commodity description to find the top 10 export commodities.
+
+#### 6.2 Visualization and Insights
+Due to the often long names in 'Harmonised System Description', I created separate vertical bar charts using Matplotlib and Seaborn for imports and exports. To ensure readability:
+*   Commodity names on the y-axis were shortened to a maximum character length if they exceeded this limit.
+*   Chart margins were adjusted to properly fit the labels.   
+
+![Top Import Commodities Chart](top_import_export_commodities_chart.png)
