@@ -130,7 +130,23 @@ To achieve this:
 *   **Top Deficit Incurring Countries:**
     *   New Zealand had its largest trade deficit with **South Korea**.
     *   The second largest deficit was with **Germany**.
-    *   The third largest deficit was with **Sigapore**. *(Please fill this in based on your data)*
+    *   The third largest deficit was with **Sigapore**. 
 *   **Notable Absences:** It was interesting to note that Australia and the USA, New Zealand's second and third largest overall trading partners respectively, did not appear among the top countries for either the largest surpluses or largest deficits. This suggests a more balanced trade relationship with them in terms of direct export-import values, or that their large total trade volume is composed of many offsetting transactions.
 
 The code for these calculations can be found in the [Kaggle Notebook]({kaggle_notebook_link}). 
+
+### Step 5: Monthly Export and Import Trends (2022-2024)
+
+To get a more detailed view of trade fluctuations, I analyzed the export and import trends on a monthly basis from January 2022 to December 2024. The main goal was to see if there were any seasonal patterns or specific monthly variations.
+
+#### 5.1 Data Preparation for Monthly Analysis
+*   Using the 'Period' column (Month-Year), I grouped both the `df_exports_all` and `df_imports_all` data.
+*   For each month, I summed the 'Total Exports ($NZD fob)' to get the total monthly export value.
+*   Similarly, I summed the 'Imports ($NZD cif)' for each month to get the total monthly import value.
+    
+#### 5.2 Visualization and Insights
+I created a line chart using Matplotlib to plot these monthly export and import values over the three-year period.
+*   The **x-axis** represented the 'Period' (Month-Year).
+*   The **y-axis** represented the monetary values in NZD.
+*   Two lines were plotted: one for total monthly exports (in green) and one for total monthly imports (in blue).
+*   
