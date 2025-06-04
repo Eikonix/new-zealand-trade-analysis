@@ -203,7 +203,6 @@ Beyond looking at aggregate totals, I also investigated individual trade transac
     *   It was noted that all of the top 10 single import transactions significantly exceeded 100 million NZD in value, highlighting the scale of these individual deals.
       
   *   **Here are some of the top individual high-value import transactions:**
-  *   
         1.  **Automotive Diesel:**   ~426M NZD from South Korea (Jan 2023)
         2.  **Automotive Diesel:**   ~403M NZD from South Korea (Sep 2022)
         3.  **Automotive Diesel:**   ~386M NZD from South Korea (Jul 2024)
@@ -219,8 +218,8 @@ Beyond looking at aggregate totals, I also investigated individual trade transac
     *   All of the top 10 most expensive single export transactions were destined for **China**.
     *   The commodities involved were primarily **Dairy produce** and **Wood**. This aligns with the findings from the aggregate top export commodity and top export country analyses, reinforcing the importance of these products and this market for high-value exports.
 
-*   **Here are some of top individual high-value export transactions:**
-*   
+ *   **Here are some of the top individual high-value export transactions:**
+        
         1.  **Dairy Produce (Whole Milk Powder):** ~347M NZD to China (Mar 2022)
         2.  **Dairy Produce (Whole Milk Powder):** ~321M NZD to China (Dec 2024)
         3.  **Dairy Produce (Whole Milk Powder):** ~306M NZD to China (Dec 2022)
@@ -262,3 +261,30 @@ To understand broader patterns within *all* transactions exceeding the 10,000,00
 *   **Insight:** The concentration of frequent high-value export deals largely mirrors the overall top trading partners, with China, the USA, Australia, Japan and South Korea being key destinations. This indicates that New Zealand's most significant export relationships are also characterized by a substantial number of large individual transactions, primarily in dairy and meat products. While the single largest-value deals are heavily skewed towards China, these other top partners also consistently engage in high-value trade.
 
 The code for identifying these high-value transactions and their characteristics can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
+
+#### 7.3 Distribution of High-Value Transaction Amounts by Commodity Chapter (HS2 Code)
+
+To further understand the characteristics of the high-value transactions (those exceeding 10,000,000 NZD for both imports and exports), I examined the distribution of their monetary values across different broad commodity chapters (HS2 Codes).
+
+**Methodology:**
+*   The 'HS2_Code' (first two digits of the Harmonized System Code, representing the commodity chapter) was used to categorize these high-value transactions.
+*   Box plots were generated using Matplotlib and Seaborn to visualize the distribution (median, quartiles, range, and outliers) of transaction values. This was done for the top 15 HS2 chapters (ranked by the total value of expensive transactions within each chapter) to ensure the chart remained readable.
+*   Alongside each box plot, a list mapping the HS2 codes to their chapter descriptions was provided for clarity.
+
+**High-Value Import Transaction Distribution:**
+
+
+
+**Key Insights from the Box Plots:** 
+
+*   **For High-Value Imports:**
+    *   **HS2 Chapter '27' (Mineral fuels, mineral oils, etc.):** This chapter, which includes significant imports like automotive diesel, displayed the largest interquartile range (the "box" itself was big). This indicates a wide variation in the values of its high-value transactions. Furthermore, it showed outliers across a very broad range, highlighting that some individual fuel/oil shipments were exceptionally expensive compared to the typical range of other high-value deals within this chapter.
+    *   **HS2 Chapter '84' (Machinery and mechanical appliances, etc.):** This chapter also showed a considerable spread in its high-value transaction amounts (being the second biggest box). However, it had fewer extreme outliers compared to Chapter '27', suggesting that while the values of expensive machinery imports varied, they were generally more consistent without as many exceptionally high-value single deals.
+    *   **HS2 Chapter '88' (Aircraft, spacecraft, and parts thereof):** Expensive transactions in this chapter also showed a notable spread. The presence of several outliers with a wide range indicates that a few specific aircraft or high-value parts purchases were significantly more costly than other expensive transactions in this category.
+
+*   **For High-Value Exports:**
+    *   The box plot for exports clearly highlighted that HS2 Chapter **[e.g., '04' - Dairy produce]** had numerous high-value transactions, and these often involved very large individual amounts, as shown by a high median, a wide interquartile range, and significant outliers.
+    *   HS2 Chapter **[e.g., '44' - Wood and articles of wood]** also featured prominently with high-value deals, perhaps showing [e.g., a slightly lower median than dairy but still a wide range / or a more consistent range of high values].
+    *   *(Add 1-2 more specific observations from your export box plot).*
+
+This analysis helps to pinpoint which broad categories of goods are driving the very large single transactions and how varied those transaction values are within each category. The detailed code for creating these box plots is in the [Kaggle Notebook]({your_kaggle_notebook_link_here}). *(Replace link)*
