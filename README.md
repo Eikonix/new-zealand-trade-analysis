@@ -1,5 +1,3 @@
-# new-zealand-trade-analysis
-Analysis of New Zealand's export and import trade data from 2022-2024
 # New Zealand Trade Data Analysis (2022-2024)
 
 ## Overview
@@ -173,3 +171,94 @@ Due to the often long names in 'Harmonised System Description', I created separa
 *   Chart margins were adjusted to properly fit the labels.   
 
 ![Top Import Commodities Chart](top_import_export_commodities_chart.png)
+
+**Key Observations from Top Traded Commodities:**
+
+**Top Import Commodities:**
+*   The leading import commodities were largely **vehicles and machinery-related items**.
+*   The top 5 imports included categories such as: Automotive diesel, Motor spirit, Kerosene/Jet fuel, Turbines, Vehicles.
+*   Notably, the value of the top import commodity was more than double that of the second-ranked import commodity, indicating very high demand for this specific category.
+
+**Top Export Commodities:**
+*   New Zealand's top export commodities were predominantly **primary sector products, especially food items**.
+*   The top 5 exports included: Dairy produce (milk powder), Wood, Meat of bovine animals (beef), Meat of sheep", "Fruits.
+*   The top export commodity (likely dairy produce) showed exceptionally high demand, with its total value being more than three times that of the second top export.
+*   This aligns with New Zealand's international reputation as a major producer and exporter of dairy products.
+
+The code for identifying and visualizing these top commodities can be found in the [Kaggle Notebook]({kaggle_notebook_link_}). 
+
+### Step 7: Analysis of High-Value Single Trade Transactions (2022-2024)
+
+Beyond looking at aggregate totals, I also investigated individual trade transactions with exceptionally high monetary values. This helps to understand what specific deals contribute significantly to the overall trade figures.
+
+#### 7.1 Identifying High-Value Single Transactions
+*   **Threshold Setting:** To identify these significant transactions, a single import or export deal was considered "high-value" if its transaction value exceeded 10,000,000 NZD.
+*   **Top Transactions:** After filtering for these high-value transactions, I examined the top 10 most expensive single import deals and top 10 most expensive single export deals by sorting them by their transaction value.
+
+**Key Observations from Top 10 Single Expensive Transactions:**
+
+*   **Imports (Top 10 Single Deals):**
+    *   The most expensive single import transactions were dominated by **Automotive diesel** (primarily from South Korea and Singapore), **Aeroplanes and other aircraft** (from the USA), and various **Oils** (from the UAE).
+    *   This suggests that large, individual shipments of machinery, vehicles, and fuel products represent some of the highest value single import events.
+    *   It was noted that all of the top 10 single import transactions significantly exceeded 100 million NZD in value, highlighting the scale of these individual deals.
+      
+  *   **Here are some of the top individual high-value import transactions:**
+  *   
+        1.  **Automotive Diesel:**   ~426M NZD from South Korea (Jan 2023)
+        2.  **Automotive Diesel:**   ~403M NZD from South Korea (Sep 2022)
+        3.  **Automotive Diesel:**   ~386M NZD from South Korea (Jul 2024)
+        4.  **Aeroplanes/Aircraft:** ~361M NZD from USA (Sep 2024)
+        5.  **Automotive Diesel:**   ~347M NZD from Singapore (Jan 2023)
+        6.  **Oils:**                ~340M NZD from UAE (Jan 2022)
+        7.  **Automotive Diesel:**   ~301M NZD from South Korea (Nov 2022)
+        8.  **Oils:**                ~294M NZD from UAE (Feb 2022)
+        9.  **Automotive Diesel:**   ~282M NZD from South Korea (Aug 2024)
+        10. **Automotive Diesel:**   ~276M NZD from South Korea (Aug 2022)
+
+*   **Exports (Top 10 Single Deals):**
+    *   All of the top 10 most expensive single export transactions were destined for **China**.
+    *   The commodities involved were primarily **Dairy produce** and **Wood**. This aligns with the findings from the aggregate top export commodity and top export country analyses, reinforcing the importance of these products and this market for high-value exports.
+
+*   **Here are some of top individual high-value export transactions:**
+*   
+        1.  **Dairy Produce (Whole Milk Powder):** ~347M NZD to China (Mar 2022)
+        2.  **Dairy Produce (Whole Milk Powder):** ~321M NZD to China (Dec 2024)
+        3.  **Dairy Produce (Whole Milk Powder):** ~306M NZD to China (Dec 2022)
+        4.  **Wood:**                              ~302M NZD to China (Nov 2022)
+        5.  **Dairy Produce (Whole Milk Powder):** ~268M NZD to China (Feb 2024)
+
+#### 7.2 Commodity and Country Concentration in *All* High-Value Deals
+
+To understand broader patterns within *all* transactions exceeding the 10,000,000 NZD threshold (not just the top 10 single deals), I analyzed the frequency of commodities and countries involved.
+
+**Concentration in High-Value Imports:**
+*   **Most Frequent Commodities (by number of >10M NZD import deals):**
+    1.  Confidential items
+    2.  Automotive diesel
+    3.  Medicaments (Pharmaceuticals)
+    4.  Turbines
+    5.  Motor spirit (Petrol/Gasoline)
+*   **Most Frequent Countries (by number of >10M NZD import deals):**
+    1.  China
+    2.  Japan
+    3.  Australia
+    4.  USA
+    5.  South Korea
+*   **Insight:** The high frequency of 'Automotive diesel' deals, coupled with the large individual values seen in the top 10 single transactions, could be a significant driver of overall import values, particularly if many such deals occurred in periods like 2022 when total imports were highest.
+
+**Concentration in High-Value Exports:**
+*   **Most Frequent Commodities (by number of >10M NZD export deals):**
+    1.  Dairy produce (Whole milk powder, high fat)
+    2.  Dairy produce (Skimmed milk powder)
+    3.  Dairy produce (Anhydrous milk fat)
+    4.  Meat of sheep (lamb cuts with bone in, frozen)
+    5.  Dairy produce (Unsalted butter)
+*   **Most Frequent Countries (by number of >10M NZD export deals):**
+    1.  China
+    2.  USA
+    3.  Australia
+    4.  Japan
+    5.  South Korea
+*   **Insight:** The concentration of frequent high-value export deals largely mirrors the overall top trading partners, with China, the USA, Australia, Japan and South Korea being key destinations. This indicates that New Zealand's most significant export relationships are also characterized by a substantial number of large individual transactions, primarily in dairy and meat products. While the single largest-value deals are heavily skewed towards China, these other top partners also consistently engage in high-value trade.
+
+The code for identifying these high-value transactions and their characteristics can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
