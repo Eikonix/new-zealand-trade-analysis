@@ -80,7 +80,7 @@ Below is the chart showing the yearly trade summary:
     *   New Zealand experienced a trade deficit (imports were higher than exports) in all three years (2022, 2023, and 2024).
     *   However, the trade deficit appeared to be improving (getting smaller) over time, likely due to the decrease in import values.
 
-The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
+The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook](https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export).
 ### Step 3: Analysis of Top Trading Partner Countries (2022-2024 Aggregate)
 
 To understand New Zealand's key trading relationships, I identified the top trading partner countries based on the total value of trade over the entire 2022-2024 period.
