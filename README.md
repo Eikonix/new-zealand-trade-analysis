@@ -99,7 +99,7 @@ I created side-by-side horizontal bar charts using Matplotlib and Seaborn to dis
 *   **Key Regional Partners:** Australia was the second-largest trading partner, followed by the USA as the third, for both imports and exports.
 *   **Other Significant Asian Partners:** Japan and South Korea also featured prominently in the top 5 for both import sources and export destinations, with their exact rankings slightly varying between imports and exports (Japan was 4th for imports and 5th for exports; South Korea was 5th for imports and 4th for exports).
 
-The code for this country-level aggregation and visualization can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
+The code for this country-level aggregation and visualization can be found in the [Kaggle Notebook](https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export).
 
 ### Step 4: Trade Balance with Key Countries (2022-2024 Aggregate)
 
@@ -130,7 +130,7 @@ To achieve this:
     *   The third largest deficit was with **Sigapore**. 
 *   **Notable Absences:** It was interesting to note that Australia and the USA, New Zealand's second and third largest overall trading partners respectively, did not appear among the top countries for either the largest surpluses or largest deficits. This suggests a more balanced trade relationship with them in terms of direct export-import values, or that their large total trade volume is composed of many offsetting transactions.
 
-The code for these calculations can be found in the [Kaggle Notebook]({kaggle_notebook_link}). 
+The code for these calculations can be found in the [Kaggle Notebook](https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export). 
 
 ### Step 5: Monthly Export and Import Trends (2022-2024)
 
@@ -184,7 +184,7 @@ Due to the often long names in 'Harmonised System Description', I created separa
 *   The top export commodity (likely dairy produce) showed exceptionally high demand, with its total value being more than three times that of the second top export.
 *   This aligns with New Zealand's international reputation as a major producer and exporter of dairy products.
 
-The code for identifying and visualizing these top commodities can be found in the [Kaggle Notebook]({kaggle_notebook_link_}). 
+The code for identifying and visualizing these top commodities can be found in the [Kaggle Notebook](https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export). 
 
 ### Step 7: Analysis of High-Value Single Trade Transactions (2022-2024)
 
@@ -259,7 +259,7 @@ To understand broader patterns within *all* transactions exceeding the 10,000,00
     5.  South Korea
 *   **Insight:** The concentration of frequent high-value export deals largely mirrors the overall top trading partners, with China, the USA, Australia, Japan and South Korea being key destinations. This indicates that New Zealand's most significant export relationships are also characterized by a substantial number of large individual transactions, primarily in dairy and meat products. While the single largest-value deals are heavily skewed towards China, these other top partners also consistently engage in high-value trade.
 
-The code for identifying these high-value transactions and their characteristics can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
+The code for identifying these high-value transactions and their characteristics can be found in the [Kaggle Notebook](https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export).
 
 #### 7.3 Distribution of High-Value Transaction Amounts by Commodity Chapter (HS2 Code)
 
@@ -294,4 +294,4 @@ To further understand the characteristics of the high-value transactions (those 
 
     *   **HS2 Chapter '08' (Edible fruit and nuts):** This chapter presented a smaller box for its high-value transactions, with the median again towards the lower end. However, it featured long whiskers and some outliers. This pattern could suggest that while many expensive fruit deals fall within a certain range, **seasonal factors or shipments of higher-value fruits likely contribute to transactions with significantly larger values** at certain times or for specific fruit types.
 
-This analysis helps to pinpoint which broad categories of goods are driving the very large single transactions and how varied those transaction values are within each category. The detailed code for creating these box plots is in the [Kaggle Notebook]({kaggle_notebook_link}). 
+This analysis helps to pinpoint which broad categories of goods are driving the very large single transactions and how varied those transaction values are within each category. The detailed code for creating these box plots is in the [Kaggle Notebook](https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export). 
