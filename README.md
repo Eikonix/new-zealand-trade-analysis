@@ -273,7 +273,7 @@ To further understand the characteristics of the high-value transactions (those 
 
 **High-Value Import Transaction Distribution:**
 
-
+![Import HS2 Box Plot](import_hs2_boxplot.png)
 
 **Key Insights from the Box Plots:** 
 
@@ -282,9 +282,17 @@ To further understand the characteristics of the high-value transactions (those 
     *   **HS2 Chapter '84' (Machinery and mechanical appliances, etc.):** This chapter also showed a considerable spread in its high-value transaction amounts (being the second biggest box). However, it had fewer extreme outliers compared to Chapter '27', suggesting that while the values of expensive machinery imports varied, they were generally more consistent without as many exceptionally high-value single deals.
     *   **HS2 Chapter '88' (Aircraft, spacecraft, and parts thereof):** Expensive transactions in this chapter also showed a notable spread. The presence of several outliers with a wide range indicates that a few specific aircraft or high-value parts purchases were significantly more costly than other expensive transactions in this category.
 
-*   **For High-Value Exports:**
-    *   The box plot for exports clearly highlighted that HS2 Chapter **[e.g., '04' - Dairy produce]** had numerous high-value transactions, and these often involved very large individual amounts, as shown by a high median, a wide interquartile range, and significant outliers.
-    *   HS2 Chapter **[e.g., '44' - Wood and articles of wood]** also featured prominently with high-value deals, perhaps showing [e.g., a slightly lower median than dairy but still a wide range / or a more consistent range of high values].
-    *   *(Add 1-2 more specific observations from your export box plot).*
+**High-Value Export Transaction Distribution:**
 
+
+*   **For High-Value Exports:**
+    *   **HS2 Chapter '04' (Dairy produce; etc.):** While Dairy is a top export, its box plot for high-value transactions (deals > 10M NZD) showed a relatively smaller box. This suggests that the middle 50% of expensive dairy deals have values that are somewhat more consistent with each other. However, Chapter '04' was characterized by numerous outliers extending over a very wide and high range of values, indicating the presence of many exceptionally large single export deals for dairy products.
+
+    *   **HS2 Chapter '44' (Wood and articles of wood):** This chapter displayed a large and long box, with the median positioned towards the lower end. The long whiskers and the large interquartile range indicate a **high degree of variability in the values of individual high-value wood export transactions**, with no extreme outliers beyond this wide range. This wide variation might reflect differing volumes, types, or destinations of wood shipments.
+
+    *   **HS2 Chapter '02' (Meat and edible meat offal):** High-value meat exports showed a relatively large box (larger than dairy's), with its median also skewed towards the lower end of the box. The whiskers were longer than dairy's, and there were notable outliers spread over a significant range. This suggests that while many expensive meat transactions occur, some deals, potentially for **premium cuts or larger shipments, achieve exceptionally higher values.**
+
+    *   **HS2 Chapter '08' (Edible fruit and nuts):** This chapter presented a smaller box for its high-value transactions, with the median again towards the lower end. However, it featured long whiskers and some outliers. This pattern could suggest that while many expensive fruit deals fall within a certain range, **seasonal factors or shipments of higher-value fruits likely contribute to transactions with significantly larger values** at certain times or for specific fruit types.
+
+    *   *(Optional: Add one more observation about another prominent chapter from your export box plot, e.g., Chapter 22 Wine, Chapter 29 Organic Chemicals, or Chapter 76 Aluminium, and describe its box, median, whiskers, and outliers.)*
 This analysis helps to pinpoint which broad categories of goods are driving the very large single transactions and how varied those transaction values are within each category. The detailed code for creating these box plots is in the [Kaggle Notebook]({your_kaggle_notebook_link_here}). *(Replace link)*
