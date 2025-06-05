@@ -12,7 +12,7 @@ The main goals were to:
 
 *   **Data Source:** Stats NZ - Overseas Merchandise Trade datasets.
 *   **Analysis Platform:** The data was analyzed using Kaggle.
-*   **Kaggle Notebook Link:** [https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export]
+*   **Kaggle Notebook Link:** [(https://www.kaggle.com/code/eikonixon/analysis-on-new-zealand-import-export)]
 *   **Period Covered:** 2022 - 2024.
 *   **Contents:** The dataset includes monthly information on Harmonized System (HS) codes, trading partner countries, and trade values.
 
@@ -80,8 +80,7 @@ Below is the chart showing the yearly trade summary:
     *   New Zealand experienced a trade deficit (imports were higher than exports) in all three years (2022, 2023, and 2024).
     *   However, the trade deficit appeared to be improving (getting smaller) over time, likely due to the decrease in import values.
 
-The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link}). 
-
+The interactive version of this chart and the code to generate it can be found in the [Kaggle Notebook]({kaggle_notebook_link}).
 ### Step 3: Analysis of Top Trading Partner Countries (2022-2024 Aggregate)
 
 To understand New Zealand's key trading relationships, I identified the top trading partner countries based on the total value of trade over the entire 2022-2024 period.
@@ -284,6 +283,7 @@ To further understand the characteristics of the high-value transactions (those 
 
 **High-Value Export Transaction Distribution:**
 
+![Export HS2 Box Plot](export_hs2_boxplot.png)
 
 *   **For High-Value Exports:**
     *   **HS2 Chapter '04' (Dairy produce; etc.):** While Dairy is a top export, its box plot for high-value transactions (deals > 10M NZD) showed a relatively smaller box. This suggests that the middle 50% of expensive dairy deals have values that are somewhat more consistent with each other. However, Chapter '04' was characterized by numerous outliers extending over a very wide and high range of values, indicating the presence of many exceptionally large single export deals for dairy products.
@@ -294,5 +294,4 @@ To further understand the characteristics of the high-value transactions (those 
 
     *   **HS2 Chapter '08' (Edible fruit and nuts):** This chapter presented a smaller box for its high-value transactions, with the median again towards the lower end. However, it featured long whiskers and some outliers. This pattern could suggest that while many expensive fruit deals fall within a certain range, **seasonal factors or shipments of higher-value fruits likely contribute to transactions with significantly larger values** at certain times or for specific fruit types.
 
-    *   *(Optional: Add one more observation about another prominent chapter from your export box plot, e.g., Chapter 22 Wine, Chapter 29 Organic Chemicals, or Chapter 76 Aluminium, and describe its box, median, whiskers, and outliers.)*
-This analysis helps to pinpoint which broad categories of goods are driving the very large single transactions and how varied those transaction values are within each category. The detailed code for creating these box plots is in the [Kaggle Notebook]({your_kaggle_notebook_link_here}). *(Replace link)*
+This analysis helps to pinpoint which broad categories of goods are driving the very large single transactions and how varied those transaction values are within each category. The detailed code for creating these box plots is in the [Kaggle Notebook]({kaggle_notebook_link}). 
